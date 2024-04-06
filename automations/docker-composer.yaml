@@ -1,0 +1,16 @@
+version: "3"
+services:
+  summer:
+    build:
+      context: .
+      dockerfile: summer.dockerfile
+      tags:
+        - learn/summer:latest
+        - learn/summer:v0.0.0
+  multiplier:
+    build:
+      context: .
+      dockerfile: multiplier.dockerfile
+      tags:
+      - learn/mutiplier:latest
+      - learn/multiplier:v0.0.0
